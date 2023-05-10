@@ -1,0 +1,11 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{ products.name }}</mat-card-title>
+      <mat-card-subtitle>{{ products.type }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="http://localhost/{{ products.image }}"
+      class="image"/>
+      <a routerLink="/{{products.id}}"> details </a>
+    <p >{{ products.Food}}</p>
+  </mat-card>
+  

@@ -1,0 +1,25 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .price {
+    margin: 1rem;
+    font-weight: bolder;
+  }
+  .image {
+    width: 300px;
+    height: 250px;
+  }
+  a{
+    font-weight: bolder;
+    
+  }
+  p{
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  a:hover
+  {
+    text-decoration-color: blue;
+  }

@@ -1,0 +1,25 @@
+.prod-title{
+    font-weight: bold;
+    font-size: larger;
+
+}
+.images{
+    display:block;
+    border:solid #0f0f0f;
+    margin: .5%;
+    align-self: center;
+    
+}
+.total{
+    text-align:right;
+    text-align:center;
+    text-align: top;
+    margin-bottom: .5px;
+    margin-left:.1rem ;
+    margin-right:.1rem;
+    border: 5px solid #0f0f0f
+}
+img{
+    height: 250px;
+    width: 250px;
+}
