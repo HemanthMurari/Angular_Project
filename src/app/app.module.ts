@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserModule } from './user/user.module';
 import { AdminModule } from './admin/admin.module';
+import { SharedModule } from './shared/shared.module';
+import { AfilterPipe } from './pipes/afilter.pipe';
 
 
 
@@ -17,9 +19,7 @@ import { AdminModule } from './admin/admin.module';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-   
-
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +28,7 @@ import { AdminModule } from './admin/admin.module';
     MaterialModule,
     FormsModule,
     HttpClientModule,
-    UserModule,
-    AdminModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

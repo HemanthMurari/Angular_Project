@@ -8,27 +8,29 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../material/material.module';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { AfilterPipe } from '../pipes/afilter.pipe';
 
 
 const route:Routes=[
 
   {
-  path:"home",
-  component: HomeComponent,
-  },
-  {
-    path:"add-diet-plan",
-    component: DietPlanFormComponent,
-  },
-  {
-    path:"delete-diet-plan",
-    component: DietPlanFormComponent,
-}]
+  path:"home",component: HomeComponent,
+  children:[
+    {path:"",component:AdminHomeComponent},
+    {path:"adddietplan",component: DietPlanFormComponent,},
+    // {path:"delete-diet-plan",component: DietPlanFormComponent,}
+
+  ]},
+ ];
+
 
 @NgModule({
   declarations: [
     HomeComponent,
-    DietPlanFormComponent
+    DietPlanFormComponent,
+    AdminHomeComponent,
+    AfilterPipe
   ],
   imports: [
     CommonModule,
@@ -38,7 +40,8 @@ const route:Routes=[
     SharedModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
 
 
   ]

@@ -191,8 +191,8 @@
       "id": 1,
       "Food": "Cows' milk",
       "Measure": "1 qt.",
-      "Grams": 976,
-      "Calories": 660,
+      "Grams": 976 ,
+      "Calories": 660 ,
       "Protein": 32,
       "Fat": 40,
       "Sat.Fat": 36,
@@ -1854,43 +1854,17 @@
       "image": "drinks.jpg"
     },
     {
-      "Food": "gywdgshbb",
-      "Measure": "1/2 cup",
-      "Grams": "12",
-      "Calories": "12",
-      "Protein": "12",
-      "Fat": "12",
-      "Sat_Fat": "12",
-      "Fiber": "1212",
-      "Carbs": "22",
-      "Category": "12",
-      "id": 122
-    },
-    {
-      "Food": "charu",
-      "Measure": "21",
-      "Grams": "80",
-      "Calories": "0",
-      "Protein": "767",
-      "Fat": "100000000",
-      "Sat_Fat": "29",
-      "Fiber": "99",
-      "Carbs": "1001",
-      "Category": "nnhgj",
-      "id": 123
-    },
-    {
-      "Food": "charu",
-      "Measure": "21",
-      "Grams": "12",
-      "Calories": "899",
-      "Protein": "88",
-      "Fat": "65",
-      "Sat_Fat": "65",
-      "Fiber": "89",
-      "Carbs": "1001",
-      "Category": "ad",
-      "id": 124
+      "Food": "bannana",
+      "Measure": "1/2",
+      "Grams": "32",
+      "Calories": "223",
+      "Protein": "32",
+      "Fat": "22",
+      "Sat_Fat": "33",
+      "Fiber": "23",
+      "Carbs": "12",
+      "Category": "fruits",
+      "id": 125
     }
   ]
 }
