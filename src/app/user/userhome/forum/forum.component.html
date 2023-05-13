@@ -1,8 +1,22 @@
-<h1>Please provide your valuable feedback </h1>
-<p>please provide your experience using this website to increase productivity and please post the complaints here</p>
-<div class="fb">
-  <textarea name="fb"  cols="30" rows="10"
-    [(ngModel)]="com" [ngModelOptions]="{standalone: true}"></textarea>
-      <button (click)="onPost()">submit</button>
-  </div>   
-<p *ngFor="let x of forums">{{x.comment}}</p>
+<div class="container">
+  <h2>Post feedback or Suggestions here</h2>
+    <div class="feedback-section">
+    <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Input</mat-label>
+        <input matInput [(ngModel)]="query" class="input-box">
+    </mat-form-field>
+      <button mat-raised-button color="primary" class="b1" (click)="AddQuestion()">Post</button>
+      <app-forumbox *ngFor="let x of forumlist" [q]="x" class="feedback-box"></app-forumbox>
+    </div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      

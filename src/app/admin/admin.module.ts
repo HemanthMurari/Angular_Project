@@ -10,6 +10,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../material/material.module';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AfilterPipe } from '../pipes/afilter.pipe';
+import { AdminpageComponent } from './adminpage/adminpage.component';
+import { AdreplyComponent } from './adminpage/adreply/adreply.component';
+import { AdreplyformComponent } from './adminpage/adreplyform/adreplyform.component';
+import { ForumComponent } from '../user/userhome/forum/forum.component';
 
 
 const route:Routes=[
@@ -20,6 +24,10 @@ const route:Routes=[
     {path:"",component:AdminHomeComponent},
     {path:"adddietplan",component: DietPlanFormComponent,},
     // {path:"delete-diet-plan",component: DietPlanFormComponent,}
+    {
+      path:"reach",
+      component : AdminpageComponent
+    }
 
   ]},
  ];
@@ -30,7 +38,10 @@ const route:Routes=[
     HomeComponent,
     DietPlanFormComponent,
     AdminHomeComponent,
-    AfilterPipe
+    AfilterPipe,
+    AdminpageComponent,
+    AdreplyComponent,
+    AdreplyformComponent
   ],
   imports: [
     CommonModule,

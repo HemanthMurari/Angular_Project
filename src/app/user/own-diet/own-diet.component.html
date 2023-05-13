@@ -1,0 +1,28 @@
+
+    <div  cdkDropListGroup>
+      <div class="example-container">
+        <h2>Available items</h2>
+        <div  class="gg" cdkDropList [cdkDropListData]="products" class="example-list" cdkDropListSortingDisabled (cdkDropListDropped)="drop($event)">
+          <div class="example-box" *ngFor="let item of products" cdkDrag>{{ item.Food }}</div>
+        </div>
+      </div>
+      <div class="example-container">
+        <h2>Diet Plan</h2>
+        <div cdkDropList [cdkDropListData]="basket" class="example-list" (cdkDropListDropped)="drop($event)">
+          <div class="example-box" *ngFor="let item of basket" cdkDrag>
+            <div class="item-details">
+              <div>{{ item.Food }}</div>
+              <div>{{item.Food}}Quantity: <input type="number" [(ngModel)]="item.quantity" min="1" placeholder="Quantity.."></div>
+            </div>
+          </div>
+        </div>
+        <button mat-raised-button color="primary" (click)="calculateNutrition()">Calculate Nutrition</button>
+        <div *ngIf="basket.length > 0" class="result">
+          <h2>Nutrition Information</h2>
+          <p>Total Calories: {{ totalCalories }}</p>
+          <p>Total Fat: {{ totalFat }}g</p>
+          <p>Total Protein: {{ totalProtein }}g</p>
+          <p>Total Carbs: {{ totalCarbs }}g</p>
+        </div>
+      </div>
+    </div>  

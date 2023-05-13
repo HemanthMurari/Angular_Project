@@ -19,6 +19,9 @@ import { DietPlanComponent } from './diet-plan/diet-plan.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { DietplanBoxComponent } from './diet-plan/dietplan-box/dietplan-box.component';
 import { ForumComponent } from './userhome/forum/forum.component';
+import { ForumboxComponent } from './userhome/forum/forumbox/forumbox.component';
+import { ForumfeedbackComponent } from './userhome/forum/forumfeedback/forumfeedback.component';
+import { OwnDietComponent } from './own-diet/own-diet.component';
 
 const route:Routes=[
 
@@ -46,6 +49,10 @@ const route:Routes=[
       path:"diet",
       component : DietPlanComponent
     },
+    {
+      path:"create",
+      component:OwnDietComponent
+    },
 
   ]
 }
@@ -66,7 +73,10 @@ const route:Routes=[
     ReachUsComponent,
     DietPlanComponent,
     DietplanBoxComponent,
-    ForumComponent
+    ForumComponent,
+    ForumboxComponent,
+    ForumfeedbackComponent,
+    OwnDietComponent
   ],
   imports: [
     CommonModule,

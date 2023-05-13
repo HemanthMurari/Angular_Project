@@ -1,0 +1,26 @@
+  
+  
+a {
+    text-decoration: none; /* remove underline */
+    color: #333; /* change link color */
+  }
+  
+  .complaint-box {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  .complaint-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .mat-card-content {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  

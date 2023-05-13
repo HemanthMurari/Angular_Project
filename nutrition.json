@@ -1,34 +1,19 @@
 {
   "forum": [
     {
-      "id": 1,
-      "username": "Naga",
-      "comment": "hello by Naga"
+      "id": 9,
+      "question": "This is ANHM",
+      "responses": [
+        "Yes Mr.ANHM....?",
+        "i have an issue with the product of yours?",
+        "May i know what's that issue?",
+        "The product i want is not opening",
+        null
+      ]
     },
     {
       "id": 2,
-      "username": "Hemanth",
-      "comment": "helo by Hemanth"
-    },
-    {
-      "id": 3,
-      "username": "Murari",
-      "comment": "hello by Murari"
-    },
-    {
-      "id": 4,
-      "username": "Allagadda",
-      "comment": "hello by Allagadda"
-    },
-    {
-      "usernmae": "hemanthmurari",
-      "comment": "hello Mr. Naga Hemanth Murari Allagadda",
-      "id": 5
-    },
-    {
-      "usernmae": "hemanthmurari",
-      "comment": "hii everyone",
-      "id": 6
+      "responses": []
     }
   ],
   "users": [
@@ -191,8 +176,8 @@
       "id": 1,
       "Food": "Cows' milk",
       "Measure": "1 qt.",
-      "Grams": 976 ,
-      "Calories": 660 ,
+      "Grams": 976,
+      "Calories": 660,
       "Protein": 32,
       "Fat": 40,
       "Sat.Fat": 36,
@@ -1852,19 +1837,6 @@
       "Carbs": 1,
       "Category": "Drinks,Alcohol, Beverages",
       "image": "drinks.jpg"
-    },
-    {
-      "Food": "bannana",
-      "Measure": "1/2",
-      "Grams": "32",
-      "Calories": "223",
-      "Protein": "32",
-      "Fat": "22",
-      "Sat_Fat": "33",
-      "Fiber": "23",
-      "Carbs": "12",
-      "Category": "fruits",
-      "id": 125
     }
   ]
 }
